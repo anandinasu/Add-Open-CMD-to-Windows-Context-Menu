@@ -1,0 +1,41 @@
+Windows Registry Editor Version 5.00
+
+;Add_CMD_to_All_Context_Menus_Right_Click
+
+;Drive Context Menu
+[HKEY_CLASSES_ROOT\Drive\shell\CMD_to_All_Context_Menus_Right_Click]
+@="Open CMD here"
+"Icon"="imageres.dll,-5323"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Drive\shell\CMD_to_All_Context_Menus_Right_Click\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+;Directory Context Menu
+[HKEY_CLASSES_ROOT\Directory\shell\CMD_to_All_Context_Menus_Right_Click]
+@="Open CMD here"
+"Icon"="imageres.dll,-5323"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\shell\CMD_to_All_Context_Menus_Right_Click\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+;Explorer Context Menu
+[HKEY_CLASSES_ROOT\Directory\Background\shell\CMD_to_All_Context_Menus_Right_Click]
+@="Open CMD here"
+"Icon"="imageres.dll,-5323"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\CMD_to_All_Context_Menus_Right_Click\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+;Desktop Context Menu
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\CMD_to_All_Context_Menus_Right_Click]
+@="Open CMD here"
+"Icon"="imageres.dll,-5323"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\CMD_to_All_Context_Menus_Right_Click\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+

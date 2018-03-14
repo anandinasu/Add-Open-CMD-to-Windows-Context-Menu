@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+;Delete_CMD_from_All_Context_Menus_Shift_Right_Click
+
+;Drive Context Menu
+[-HKEY_CLASSES_ROOT\Drive\shell\CMD_to_All_Context_Menus_Shift_Right_Click]
+
+;Directory Context Menu
+[-HKEY_CLASSES_ROOT\Directory\shell\CMD_to_All_Context_Menus_Shift_Right_Click]
+
+;Explorer Context Menu
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\CMD_to_All_Context_Menus_Shift_Right_Click]
+
+;Desktop Context Menu
+[-HKEY_CLASSES_ROOT\DesktopBackground\shell\CMD_to_All_Context_Menus_Shift_Right_Click]

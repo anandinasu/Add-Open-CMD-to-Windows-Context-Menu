@@ -1,0 +1,41 @@
+Windows Registry Editor Version 5.00
+
+;Add_CMD_Admin_to_All_Context_Menus_Right_Click
+
+;Drive Context Menu
+[HKEY_CLASSES_ROOT\Drive\shell\CMD_Admin_to_All_Context_Menus_Right_Click]
+@="Open CMD(Admin) here"
+"Icon"="imageres.dll,-5324"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Drive\shell\CMD_Admin_to_All_Context_Menus_Right_Click\command]
+@="PowerShell -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/s,/k,pushd,%V' -Verb RunAs\""
+
+;Directory Context Menu
+[HKEY_CLASSES_ROOT\Directory\shell\CMD_Admin_to_All_Context_Menus_Right_Click]
+@="Open CMD(Admin) here"
+"Icon"="imageres.dll,-5324"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\shell\CMD_Admin_to_All_Context_Menus_Right_Click\command]
+@="PowerShell -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/s,/k,pushd,%V' -Verb RunAs\""
+
+;Explorer Context Menu
+[HKEY_CLASSES_ROOT\Directory\Background\shell\CMD_Admin_to_All_Context_Menus_Right_Click]
+@="Open CMD(Admin) here"
+"Icon"="imageres.dll,-5324"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\CMD_Admin_to_All_Context_Menus_Right_Click\command]
+@="PowerShell -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/s,/k,pushd,%V' -Verb RunAs\""
+
+;Desktop Context Menu
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\CMD_Admin_to_All_Context_Menus_Right_Click]
+@="Open CMD(Admin) here"
+"Icon"="imageres.dll,-5324"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\CMD_Admin_to_All_Context_Menus_Right_Click\command]
+@="PowerShell -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/s,/k,pushd,%V' -Verb RunAs\""
+
+
